@@ -1,0 +1,35 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px
+}
+
+h1 {
+    margin: 20px auto;
+    font-size: 2.5rem;
+}
+
+img {
+    cursor: pointer;
+}
+
+input {
+    width: calc(100% - 25px);
+    border: 1px solid #444;
+    padding: 3px 10px;
+}
+
+p {
+    font-size: 1.4rem;
+    margin: 10px auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.table-container {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

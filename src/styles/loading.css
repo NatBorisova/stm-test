@@ -1,0 +1,53 @@
+.loading {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: calc(50% - 75px);
+    top: 25%;
+}
+
+.loading::before, .loading::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: #444;
+    animation: 1.5s infinite;
+}
+
+.loading::before {
+    right: 0;
+    animation-name: move1;
+}
+
+.loading::after {
+    bottom: 0;
+    animation-name: move2;
+}
+
+@keyframes move1 {
+    50% {
+        margin-top: 100px;
+        margin-right: 0;
+        transform: rotate(-.25turn) scale(.5);
+    }
+    100% {
+        margin-top: 100px;
+        margin-right: 100px;
+        transform: rotate(-.5turn);
+    }
+}
+
+@keyframes move2 {
+    50% {
+        margin-bottom: 100px;
+        margin-left: 0;
+        transform: rotate(-.25turn) scale(.5);
+    }
+    100% {
+        margin-bottom: 100px;
+        margin-left: 100px;
+        transform: rotate(-.5turn);
+    }
+}

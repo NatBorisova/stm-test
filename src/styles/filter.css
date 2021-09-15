@@ -1,0 +1,10 @@
+.clear{
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 66px;
+    top: 127px;
+    background: center center no-repeat url(https://img.icons8.com/ios-glyphs/15/000000/delete-sign.png);
+    cursor: pointer;
+}
